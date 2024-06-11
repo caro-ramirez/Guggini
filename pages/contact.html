@@ -37,38 +37,81 @@
         </nav>
     </header>
     <main>
-        <section id="reservar" class="py-5">
+        <section class="contact-header py-5 text-center">
             <div class="container">
-                <h2 class="text-center mb-4">Reserva tu mesa</h2>
-                <form method="post">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="fecha" class="form-label">Fecha de la Reserva</label>
-                            <input type="date" class="form-control" id="fecha">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="hora" class="form-label">Hora de la Reserva</label>
-                            <input type="time" class="form-control" id="hora">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="personas" class="form-label">Número de Personas</label>
-                            <input type="number" class="form-control" id="personas" placeholder="Número de Personas">
-                        </div>
+                <h2>Contáctanos</h2>
+                <p>Envianos tu consulta y nos comunicaremos a la brevedad</p>
+            </div>
+        </section>
+        <section class="contact-form py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3>Información de Contacto</h3>
+                        <p>Dirección: Mariano Acosta 222, Monte Grande, Provincia de Buenos Aires</p>
+                        <p>Teléfono: +54 9 11 1234 5678</p>
+                        <p>Email: info@elenasapori.com</p>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block mt-4">Reservar</button>
-                </form>
+                    <div class="col-md-6">
+                        <h3>Formulario de Contacto</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-header py-5 text-center">
+            <div class="container">
+                <h2>Trabajá con nosotros</h2>
+                <p>¿Querés ser parte de la familia Guggini? ¡Mirá las posiciones vacantes y postulate a la que mejor te adaptes!</p>
+                <div class="col-md-12">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastname" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="lastname" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="tel" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione el puesto al que queres postularte</option>
+                            <option value="1">Ayudante de cocina</option>
+                            <option value="2">Recepcionista</option>
+                            <option value="3">Cocinero</option>
+                        </select>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Adjunta tu CV</label>
+                            <input class="form-control" type="file" id="formFile">
+                          </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Carta de presentación y horarios disponibles</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>    
