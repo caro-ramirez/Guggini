@@ -11,7 +11,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">Elena Sapori</a>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logoguggini.png" alt="Logo" class="logo">
+                    Guggini Sapori
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,10 +26,10 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link" href="reserve.html">Reservas</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./menu.html">Menú</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./reserve.html">Reservas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -34,57 +37,41 @@
         </nav>
     </header>
     <main>
-        <section class="content-header py-5">
+        <section class="menu">
             <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/imagen1.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 class="display-6">Sabores Innovadores</h1>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eum odio aliquid eos, libero harum voluptate tempore consectetur consequuntur impedit quod dolores iste incidunt alias velit perferendis hic asperiores magnam.</p>
-                                <div class="button-group">
-                                    <a href="./pages/about.html" class="btn btn-primary">Saber más</a>
-                                    <a href="./pages/menu.html" class="btn btn-secondary">Ver menú</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/imagen2.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 class="display-6">Sabores Innovadores</h1>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eum odio aliquid eos, libero harum voluptate tempore consectetur consequuntur impedit quod dolores iste incidunt alias velit perferendis hic asperiores magnam.</p>
-                                <div class="button-group">
-                                    <a href="./pages/about.html" class="btn btn-primary">Saber más</a>
-                                    <a href="./pages/menu.html" class="btn btn-secondary">Ver menú</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/imagen3.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 class="display-6">Sabores Innovadores</h1>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eum odio aliquid eos, libero harum voluptate tempore consectetur consequuntur impedit quod dolores iste incidunt alias velit perferendis hic asperiores magnam.</p>
-                                <div class="button-group">
-                                    <a href="./pages/about.html" class="btn btn-primary">Saber más</a>
-                                    <a href="./pages/menu.html" class="btn btn-secondary">Ver menú</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <h1 class="display-6 text-center mb-5">Nuestro Menú</h1>
+                <div class="menu-section">
+                    <h2 class="menu-title">Entradas</h2>
+                    <ul class="menu-items">
+                        <li>Arancini con dip de arrabbiata</li>
+                        <li>Plato de jamón crudo</li>
+                        <li>Buñuelos de acelga</li>
+                        <li>Polenta de hierbas frita con dip de salsa queso</li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <h2 class="menu-title">Pastas hechas a mano</h2>
+                    <ul class="menu-items">
+                        <li>"Sorrentinos Argentinos" de jamón cocido natural y queso con salsa la crema o salsa fileto</li>
+                        <li>Ravioles de berenjena y ricota con salsa fileto o salsa de queso azul</li>
+                        <li>Ravioles de masa verde de espinaca y ricota con salsa crema o pomodori</li>
+                        <li>Ravioles "Nero di mare" relleno de langostino y lenguado con manteca de hierbas</li>
+                        <li>Agnolotti del plin de ossobuco con salsa de azafrán</li>
+                        <li>Spaghetti al huevo con salsa pomodori</li>
+                        <li>Fettuccini de espinaca con salsa crema de hongos</li>
+                        <li>Reginette con salsa holognesa</li>
+                        <li>Malfatti de rúcula con salsa rosa</li>
+                        <li>Gnocchi de papa con salsa crema o pomodori</li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <h2 class="menu-title">Pastas al horno</h2>
+                    <ul class="menu-items">
+                        <li>Gnocchi a la sorrentina con salsa pomodori y mozzarella gratinados</li>
+                        <li>Canelones de verdura de la nonna con salsa blanca</li>
+                        <li>Rotolo de mouse de tomates secos, jamón y salsa crema</li>
+                        <li>Lasagna, capas de espinacas, mozzarella, jamón cocido, pomodori y salsa blanca</li>
+                    </ul>
                 </div>
             </div>
         </section>

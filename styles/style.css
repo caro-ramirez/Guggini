@@ -18,6 +18,7 @@ body {
 
 .navbar-brand .logo {
     height: 40px;
+    width: auto;
     margin-right: 10px;
 }
 
@@ -113,6 +114,7 @@ body {
     color: #6c757d;
 }
 
+
 .menu-header, .reserve-header, .contact-header {
     background-color: #343a40;
     padding: 60px 0;
@@ -147,6 +149,30 @@ body {
     background-color: #f8f9fa;
 }
 
+.menu-section {
+    margin-bottom: 50px;
+}
+
+.menu-title {
+    font-size: 24px;
+    color: #AF0000;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-items li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
 .footer {
     background-color: #343a40;
     color: #fff;
@@ -166,6 +192,12 @@ body {
 
 .footer a:hover {
     color: #fff;
+    text-decoration: none;
+}
+.footer h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .contact-footer li {
@@ -192,6 +224,16 @@ body {
     margin: 0;
 }
 
+.social-icons a {
+    margin: 0 10px;
+    color: #adb5bd;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
 @media (max-width: 768px) {
     .navbar-brand {
         font-size: 20px;
@@ -216,5 +258,8 @@ body {
     
     .menu-header h2, .reserve-header h2, .contact-header h2 {
         font-size: 28px;
+    }
+    .footer .col-md-4 {
+        text-align: center;
     }
 }
