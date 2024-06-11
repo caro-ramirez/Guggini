@@ -1,0 +1,220 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.navbar-custom {
+    background-color: #343a40;
+    border-bottom: 3px solid #f8c086;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar-brand .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f8c086;
+}
+
+.header {
+    background: url('../assets/header-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.25rem;
+}
+
+.content-header, .content-sau {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.content-header .title, .content-sau .title {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.content-header p, .content-sau p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.button-group .btn {
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-group .btn-primary {
+    background-color: #343a40;
+    border: none;
+}
+
+.button-group .btn-primary:hover {
+    background-color: #f8c086;
+    color: #343a40;
+}
+
+.button-group .btn-secondary {
+    background-color: #f8c086;
+    border: none;
+    color: #343a40;
+}
+
+.button-group .btn-secondary:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.menu-header, .reserve-header, .contact-header {
+    background-color: #343a40;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.menu-header h2, .reserve-header h2, .contact-header h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-header p, .reserve-header p, .contact-header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-content ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-content ul li:hover {
+    background-color: #f8f9fa;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #f8c086;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.contact-footer li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-footer li a {
+    margin-right: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-footer li i {
+    margin-right: 10px;
+}
+
+.contact-footer p {
+    margin: 0;
+}
+
+.text-center p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+    
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header p {
+        font-size: 1rem;
+    }
+    
+    .content-header .title, .content-sau .title {
+        font-size: 28px;
+    }
+    
+    .button-group .btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .menu-header h2, .reserve-header h2, .contact-header h2 {
+        font-size: 28px;
+    }
+}
