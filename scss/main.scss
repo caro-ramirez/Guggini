@@ -32,7 +32,7 @@
     }
 }
 
-.header-content {
+.header-content{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -46,12 +46,50 @@
         @include font($textfont,$color-secondary,1.3rem);
         font-weight: 400;
     }
-    .btn-custom{
-        @include button-primary;
+}
+.content-bar{
+    @include background-img-conf(url(../assets/fondo12.png),100vh);
+    text-align: left;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width:70%;
     }
+    h1{
+        @include font($titlefont,$color-primary,5rem);
+        font-weight: 500;
+        margin-bottom: 20px;
+        padding: 10rem 0 0 0;
+    }
+    h2{
+        @include font($textfont,$subtitlecolor,1.3rem);
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
 }
 .content-sau {
-    @include background-img-conf(url(../assets/fondo10.png),100vh)
+    @include background-img-conf(url(../assets/fondo10.png),100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        @include font($titlefont,$color-primary,5rem);
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    h2{
+        @include font($textfont,$subtitlecolor,1.3rem);
+        font-weight: 400;
+    }
+}
+.btn-custom-primary{
+    @include button-primary;
+}
+.btn-custom-secondary{
+    @include button-secondary;
 }
 
 @media (max-width: 767px) {
@@ -70,6 +108,9 @@
     }
     .offcanvas-title {
         @include font ($titlefont, $color-secondary, 1.5rem);
+    }
+    .content-bar .container {
+        align-items: center;
     }
     
 }

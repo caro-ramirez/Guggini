@@ -66,16 +66,35 @@
   font-size: 1.3rem;
   font-weight: 400;
 }
-.header-content .btn-custom {
-  display: inline-block;
+
+.content-bar {
+  background-image: url(../assets/fondo12.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: left;
+}
+.content-bar .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 70%;
+}
+.content-bar h1 {
+  font-family: "Birthstone Bounce", cursive;
+  color: #0F0606;
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10rem 0 0 0;
+}
+.content-bar h2 {
   font-family: "Poppins", sans-serif;
-  color: #490000;
-  font-size: 18px;
-  text-decoration: none;
-  background-color: #EBEBEB;
-  padding: 15px 30px;
-  border-radius: 30px;
-  transition: background-color 0.3s;
+  color: #B6AA99;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .content-sau {
@@ -83,6 +102,46 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-sau h1 {
+  font-family: "Birthstone Bounce", cursive;
+  color: #0F0606;
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.content-sau h2 {
+  font-family: "Poppins", sans-serif;
+  color: #B6AA99;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.btn-custom-primary {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: #F7F7F8;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #0F0606;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.btn-custom-secondary {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: #2C2C2C;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #EBEBEB;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
 }
 
 @media (max-width: 767px) {
@@ -103,6 +162,9 @@
     font-family: "Birthstone Bounce", cursive;
     color: #F7F7F8;
     font-size: 1.5rem;
+  }
+  .content-bar .container {
+    align-items: center;
   }
 }
 

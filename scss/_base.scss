@@ -16,20 +16,20 @@ $titlefont: "Birthstone Bounce", cursive;
 
 @mixin button-primary {
     display: inline-block;
-    @include font($textfont, $color-contrast,18px);
+    @include font($textfont, $color-secondary,14px);
     text-decoration: none;
-    background-color: $btn-secondary;
-    padding: 15px 30px;
+    background-color: $color-primary;
+    padding: 10px 25px;
     border-radius: 30px;
     transition: background-color 0.3s;
 }
 
 @mixin button-secondary {
     display: inline-block;
-    @include font($textfont, $color-contrast,18px);
+    @include font($textfont, $textcolor,14px);
     text-decoration: none;
     background-color: $btn-secondary;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 30px;
     transition: background-color 0.3s;
 }
