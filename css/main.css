@@ -1,4 +1,109 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url(../assets/fondo.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-menu {
+  background-image: url(../assets/fondo5.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+.navbar-brand {
+  font-family: "Birthstone Bounce", cursive;
+  color: #F7F7F8;
+}
+.navbar-brand:hover {
+  color: #B6AA99;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  color: #F7F7F8;
+}
+.nav-link:hover {
+  color: #B6AA99;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-content h1 {
+  font-family: "Birthstone Bounce", cursive;
+  color: #B6AA99;
+  font-size: 7rem;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+.header-content h2 {
+  font-family: "Poppins", sans-serif;
+  color: #F7F7F8;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.header-content .btn-custom {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: #490000;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #EBEBEB;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.content-sau {
+  background-image: url(../assets/fondo10.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .offcanvas {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 52%, rgb(52, 52, 52) 100%);
+  }
+  .offcanvas-header, .offcanvas-body {
+    color: #F7F7F8;
+  }
+  .offcanvas-header .btn-close {
+    filter: invert(100%);
+  }
+  .offcanvas-title {
+    font-family: "Birthstone Bounce", cursive;
+    color: #F7F7F8;
+    font-size: 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
