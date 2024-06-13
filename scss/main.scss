@@ -134,6 +134,37 @@
 .contact-header{
     @extend .contact-form;
 }
+.reserve-location {
+    padding-top: 3rem;  
+    padding-bottom: 3rem; 
+    @extend .contact-form;
+}
+.about-content {
+    padding: 3rem 0;
+    @extend .contact-form;
+    img{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+    }
+}
+.image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    img{
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+        width: 70%;
+        object-fit: cover;
+    }
+}
+.text-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    h3,p{
+        text-align: center;
+    }
+}
 
 @media (max-width: 1045px) {
     .navbar-toggler-icon {
@@ -157,5 +188,14 @@
     }
     .content-header .title, .content-sau .title {
         font-size: 28px;
+    }
+    .about-content h2 {
+        font-size: 2rem;
+    }
+    .order-md-2 {
+        order: -1; 
+    }
+    .image-container img {
+        clip-path: none;
     }
 }
