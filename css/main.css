@@ -27,6 +27,39 @@
   justify-content: space-between;
 }
 
+.header-about {
+  background-image: url(../assets/fondo14.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-reserve {
+  background-image: url(../assets/fondo3.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-contact {
+  background-image: url(../assets/fondo4.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .navbar {
   background: transparent !important;
 }
@@ -164,6 +197,17 @@
   padding: 10px 25px;
   border-radius: 30px;
   transition: background-color 0.3s;
+}
+
+.contact-form h3, .contact-header h3 {
+  font-family: "Poppins", sans-serif;
+  color: #490000;
+  font-size: 2rem;
+}
+.contact-form p, .contact-header p {
+  font-family: "Poppins", sans-serif;
+  color: #2C2C2C;
+  font-size: 1rem;
 }
 
 @media (max-width: 1045px) {

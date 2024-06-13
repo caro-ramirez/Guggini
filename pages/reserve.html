@@ -8,19 +8,16 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
+    <header class="header-reserve">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../assets/logoguggini.png" alt="Logo" width="40px">
-                    Guggini Sapori
-                </a>
+                <a class="navbar-brand" href="../index.html">Guggini Sapori</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Elena Sapori</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Guggini Sapori</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -35,11 +32,14 @@
                 </div>
             </div>
         </nav>
+        <div class="container text-center header-content">
+            <h1 class="display-4">Reserva tu mesa</h1>
+            <h2 class="display-6">TE ESPERAMOS PARA DELEITARTE CON LOS MEJORES PLATOS DESDE ITALIA</h2>
+        </div>
     </header>
     <main>
         <section id="reservar" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-4">Reserva tu mesa</h2>
                 <form method="post">
                     <div class="row g-3">
                         <div class="col-md-6">
@@ -67,7 +67,7 @@
                             <input type="number" class="form-control" id="personas" placeholder="Número de Personas">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block mt-4">Reservar</button>
+                    <button type="submit" class="btn-custom-primary btn-block mt-4">Reservar</button>
                 </form>
             </div>
         </section>

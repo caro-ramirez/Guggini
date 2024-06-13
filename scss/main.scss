@@ -7,10 +7,19 @@
 }
 
 .header{
-    @include background-img-conf-hearder(url(../assets/fondo.png));
+    @include background-img-conf-hearder(url(../assets/fondo.png))
 }
 .header-menu{
-    @include background-img-conf-hearder(url(../assets/fondo5.png));
+    @include background-img-conf-hearder(url(../assets/fondo5.png))
+}
+.header-about{
+    @include background-img-conf-hearder(url(../assets/fondo14.png))
+}
+.header-reserve{
+    @include background-img-conf-hearder(url(../assets/fondo3.png))
+}
+.header-contact{
+    @include background-img-conf-hearder(url(../assets/fondo4.png))
 }
 .navbar{
     background: transparent !important;
@@ -112,6 +121,18 @@
 }
 .btn-custom-secondary{
     @include button-secondary;
+}
+
+.contact-form{
+    h3{
+        @include font($textfont,$color-contrast,2rem);
+    }
+    p{
+        @include font($textfont,$textcolor,1rem)
+    }
+}
+.contact-header{
+    @extend .contact-form;
 }
 
 @media (max-width: 1045px) {
