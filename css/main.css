@@ -47,6 +47,26 @@
   color: #B6AA99;
 }
 
+.card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #6c757d;
+}
+
 .header-content {
   flex: 1;
   display: flex;
@@ -98,26 +118,28 @@
 }
 
 .content-sau {
-  background-image: url(../assets/fondo10.png);
+  background-image: url(../assets/fondo6.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .content-sau h1 {
   font-family: "Birthstone Bounce", cursive;
-  color: #0F0606;
-  font-size: 5rem;
+  color: #B6AA99;
+  font-size: 6rem;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+  padding: 3rem 0 0 0;
 }
 .content-sau h2 {
   font-family: "Poppins", sans-serif;
-  color: #B6AA99;
+  color: #F7F7F8;
   font-size: 1.3rem;
   font-weight: 400;
+  margin-bottom: 17px;
 }
 
 .btn-custom-primary {
@@ -144,7 +166,7 @@
   transition: background-color 0.3s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1045px) {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
@@ -165,6 +187,9 @@
   }
   .content-bar .container {
     align-items: center;
+  }
+  .content-header .title, .content-sau .title {
+    font-size: 28px;
   }
 }
 
