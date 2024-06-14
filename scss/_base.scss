@@ -39,7 +39,7 @@ $titlefont: "Birthstone Bounce", cursive;
     background-image: $img;
     background-size: cover;
     background-position: center;
-    height: $height;
+    min-height: $height;
 }
 @mixin background-img-conf-hearder ($img){
     background-image: $img;

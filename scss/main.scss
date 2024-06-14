@@ -66,12 +66,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h1{
+    .title-text{
         @include font($titlefont,$subtitlecolor,7rem);
         font-weight: 500;
         margin-bottom: 17px;
     }
-    h2{
+    .subtitle-text{
         @include font($textfont,$color-secondary,1.3rem);
         font-weight: 400;
     }
@@ -85,13 +85,13 @@
         align-items: flex-start;
         max-width:70%;
     }
-    h1{
+    .title-text{
         @include font($titlefont,$color-primary,5rem);
         font-weight: 500;
         margin-bottom: 20px;
         padding: 10rem 0 0 0;
     }
-    h2{
+    .subtitle-text{
         @include font($textfont,$subtitlecolor,1.3rem);
         font-weight: 400;
         text-align: left;
@@ -104,13 +104,13 @@
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    h1{
+    .title-text{
         @include font($titlefont,$subtitlecolor,6rem);
         font-weight: 500;
         margin-bottom: 3px;
         padding: 3rem 0 0 0;
     }
-    h2{
+    .subtitle-text{
         @include font($textfont,$color-secondary,1.3rem);
         font-weight: 400;
         margin-bottom: 17px;

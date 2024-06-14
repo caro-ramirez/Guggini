@@ -106,14 +106,14 @@
   flex-direction: column;
   justify-content: center;
 }
-.header-content h1 {
+.header-content .title-text {
   font-family: "Birthstone Bounce", cursive;
   color: #B6AA99;
   font-size: 7rem;
   font-weight: 500;
   margin-bottom: 17px;
 }
-.header-content h2 {
+.header-content .subtitle-text {
   font-family: "Poppins", sans-serif;
   color: #F7F7F8;
   font-size: 1.3rem;
@@ -124,7 +124,7 @@
   background-image: url(../assets/fondo12.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: left;
 }
 .content-bar .container {
@@ -133,7 +133,7 @@
   align-items: flex-start;
   max-width: 70%;
 }
-.content-bar h1 {
+.content-bar .title-text {
   font-family: "Birthstone Bounce", cursive;
   color: #0F0606;
   font-size: 5rem;
@@ -141,7 +141,7 @@
   margin-bottom: 20px;
   padding: 10rem 0 0 0;
 }
-.content-bar h2 {
+.content-bar .subtitle-text {
   font-family: "Poppins", sans-serif;
   color: #B6AA99;
   font-size: 1.3rem;
@@ -156,7 +156,7 @@
   background-position: center;
   min-height: 100vh;
 }
-.content-sau h1 {
+.content-sau .title-text {
   font-family: "Birthstone Bounce", cursive;
   color: #B6AA99;
   font-size: 6rem;
@@ -164,7 +164,7 @@
   margin-bottom: 3px;
   padding: 3rem 0 0 0;
 }
-.content-sau h2 {
+.content-sau .subtitle-text {
   font-family: "Poppins", sans-serif;
   color: #F7F7F8;
   font-size: 1.3rem;
@@ -176,7 +176,7 @@
   background-image: url(../assets/fondo12.png);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
