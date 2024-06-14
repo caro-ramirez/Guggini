@@ -154,10 +154,7 @@
   background-image: url(../assets/fondo6.png);
   background-size: cover;
   background-position: center;
-  height: 110vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  min-height: 100vh;
 }
 .content-sau h1 {
   font-family: "Birthstone Bounce", cursive;
@@ -176,12 +173,57 @@
 }
 
 .reserve-header {
-  background-image: url(../assets/fondo13.png);
+  background-image: url(../assets/fondo12.png);
   background-size: cover;
   background-position: center;
-  height: 220vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.reserve-header .container-time {
+  background-color: #0F0606;
+}
+.reserve-header .container-reserve {
+  background-color: rgba(247, 247, 248, 0.768627451);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reserve-header h2 {
+  font-family: "Birthstone Bounce", cursive;
+  color: #B6AA99;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 2rem 0 0 1rem;
+}
+.reserve-header h3 {
+  font-family: "Poppins", sans-serif;
+  color: #F7F7F8;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.reserve-header p {
+  font-family: "Poppins", sans-serif;
+  color: #0F0606;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.reserve-header .reserve-text {
+  font-family: "Poppins", sans-serif;
+  color: #0F0606;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.reserve-header .time-text {
+  font-family: "Poppins", sans-serif;
+  color: #F7F7F8;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .btn-custom-primary {
@@ -343,6 +385,13 @@ footer a {
   }
   footer {
     text-align: center;
+  }
+  .content-sau {
+    min-height: auto;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

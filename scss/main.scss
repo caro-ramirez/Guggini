@@ -61,8 +61,6 @@
     color: #6c757d;
 }
 
-
-
 .header-content{
     flex: 1;
     display: flex;
@@ -102,10 +100,10 @@
     
 }
 .content-sau {
-    @include background-img-conf(url(../assets/fondo6.png),110vh);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-image: url(../assets/fondo6.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
     h1{
         @include font($titlefont,$subtitlecolor,6rem);
         font-weight: 500;
@@ -120,11 +118,45 @@
 }
 
 .reserve-header {
-    @include background-img-conf(url(../assets/fondo13.png),220vh);
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
 
+    @include background-img-conf(url(../assets/fondo12.png),100vh);
+    display: flex;
+    align-items: center;
+    .container-time{
+        background-color: $color-primary;
+    }
+    .container-reserve{
+        background-color: $color-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    h2{
+        @include font($titlefont,$subtitlecolor,4rem);
+        font-weight: 500;
+        margin-bottom: 20px;
+        padding: 2rem 0 0 1rem;
+    }
+    h3{
+        @include font($textfont,$color-secondary,1.3rem);
+        font-weight: 400;
+        margin-bottom: 17px;
+    }
+    p{
+        @include font($textfont,$color-primary,1rem);
+        margin-bottom: 20px;
+    }
+    .reserve-text{
+        @include font($textfont,$color-primary,1.3rem);
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .time-text{
+        @include font($textfont,$color-secondary,1rem);
+        margin-bottom: 20px;
+    }
 }
 
 .btn-custom-primary{
@@ -257,4 +289,12 @@ footer{
     footer{
         text-align: center;
     }
+    .content-sau{
+        min-height: auto;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+   
 }
