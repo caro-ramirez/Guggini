@@ -175,6 +175,15 @@
   margin-bottom: 17px;
 }
 
+.reserve-header {
+  background-image: url(../assets/fondo13.png);
+  background-size: cover;
+  background-position: center;
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .btn-custom-primary {
   display: inline-block;
   font-family: "Poppins", sans-serif;
@@ -281,6 +290,23 @@
   text-align: center;
 }
 
+footer h3 {
+  font-family: "Poppins", sans-serif;
+  color: #797166;
+  font-size: 1.2rem;
+}
+footer p {
+  font-family: "Poppins", sans-serif;
+  color: #F7F7F8;
+  font-size: 0.8rem;
+}
+footer a {
+  font-family: "Poppins", sans-serif;
+  color: #F7F7F8;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
 @media (max-width: 1045px) {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -314,6 +340,9 @@
   }
   .image-container img {
     clip-path: none;
+  }
+  footer {
+    text-align: center;
   }
 }
 

@@ -61,6 +61,8 @@
     color: #6c757d;
 }
 
+
+
 .header-content{
     flex: 1;
     display: flex;
@@ -116,6 +118,15 @@
         margin-bottom: 17px;
     }
 }
+
+.reserve-header {
+    @include background-img-conf(url(../assets/fondo13.png),220vh);
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+
+}
+
 .btn-custom-primary{
     @include button-primary;
 }
@@ -197,6 +208,19 @@
         text-align: center;
     }
 }
+footer{
+    h3{
+        @include font($textfont,$textcolor-secondary,1.2rem);
+
+    }
+    p{
+        @include font($textfont,$color-secondary,0.8rem)
+    }
+    a{
+        @include font($textfont,$color-secondary,0.9rem);
+        text-decoration: none;
+    }
+}
 
 @media (max-width: 1045px) {
     .navbar-toggler-icon {
@@ -229,5 +253,8 @@
     }
     .image-container img {
         clip-path: none;
+    }
+    footer{
+        text-align: center;
     }
 }
