@@ -134,10 +134,40 @@
 .contact-header{
     @extend .contact-form;
 }
+
 .reserve-location  {
     padding-top: 3rem;  
     padding-bottom: 3rem; 
     @extend .contact-form;
+}
+
+.menu {
+    padding-top: 3rem;  
+    padding-bottom: 3rem; 
+    h2{
+        @include font($titlefont,$color-contrast,4rem);
+        font-weight: 400;
+        padding: 4;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    h3{
+        @include font($textfont,$textcolor-secondary,1.5rem);
+        margin-bottom: 5px;
+    }
+    p{
+        @include font($textfont,$textcolor,1rem)
+    }
+    span{
+        @include font($textfont,$color-contrast,1.2rem)
+    }
+    .menu-item-price{
+        float: right;
+    }
+}
+.menu-item {
+    border-bottom: 1px dotted $subtitlecolor; 
+    padding: 15px 0;
 }
 
 .about-content {
@@ -148,6 +178,7 @@
         margin-bottom: 1.5rem;
     }
 }
+
 .image-container {
     display: flex; 
     justify-content: center; 
@@ -166,15 +197,6 @@
         text-align: center;
     }
 }
-
-.menu-section {
-    margin-bottom: 300px;
-}
-.menu-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
 
 @media (max-width: 1045px) {
     .navbar-toggler-icon {
