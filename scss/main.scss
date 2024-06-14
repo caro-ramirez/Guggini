@@ -134,11 +134,12 @@
 .contact-header{
     @extend .contact-form;
 }
-.reserve-location {
+.reserve-location  {
     padding-top: 3rem;  
     padding-bottom: 3rem; 
     @extend .contact-form;
 }
+
 .about-content {
     padding: 3rem 0;
     @extend .contact-form;
@@ -165,6 +166,15 @@
         text-align: center;
     }
 }
+
+.menu-section {
+    margin-bottom: 300px;
+}
+.menu-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 
 @media (max-width: 1045px) {
     .navbar-toggler-icon {
