@@ -22,10 +22,10 @@
     @include background-img-conf-hearder(url(../assets/fondo4.png))
 }
 .header-error{
-    @include background-img-conf-hearder(url(../assets/fondoerror.jpg))
+    @include background-img-conf-hearder(url(../assets/fondoerror.png))
 }
 .navbar{
-    background: transparent;
+    background: transparent !important; 
 }
 
 .navbar-brand {
@@ -100,8 +100,26 @@
         text-align: left;
         margin-bottom: 20px;
     }
-    
 }
+
+.content-error{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title-text{
+        @include font($titlefont,$color-primary,5rem);
+        font-weight: 500;
+        margin-bottom: 17px;
+    }
+    .subtitle-text{
+        @include font($textfont,$color-primary,1.3rem);
+        font-weight: 400;
+    }
+
+}
+
 .content-sau {
     background-image: url(../assets/fondo6.png);
     background-size: cover;

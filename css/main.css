@@ -60,6 +60,17 @@
   justify-content: space-between;
 }
 
+.header-error {
+  background-image: url(../assets/fondoerror.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .navbar {
   background: transparent !important;
 }
@@ -148,6 +159,26 @@
   font-weight: 400;
   text-align: left;
   margin-bottom: 20px;
+}
+
+.content-error {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-error .title-text {
+  font-family: "Birthstone Bounce", cursive;
+  color: #0F0606;
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+.content-error .subtitle-text {
+  font-family: "Poppins", sans-serif;
+  color: #0F0606;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 .content-sau {
