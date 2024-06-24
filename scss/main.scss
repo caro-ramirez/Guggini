@@ -21,8 +21,11 @@
 .header-contact{
     @include background-img-conf-hearder(url(../assets/fondo4.png))
 }
+.header-error{
+    @include background-img-conf-hearder(url(../assets/fondoerror.jpg))
+}
 .navbar{
-    background: transparent !important;
+    background: transparent;
 }
 
 .navbar-brand {
