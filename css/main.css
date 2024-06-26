@@ -111,20 +111,20 @@
   color: #6c757d;
 }
 
-.header-content {
+.header-content, .content-error {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.header-content .title-text {
+.header-content .title-text, .content-error .title-text {
   font-family: "Birthstone Bounce", cursive;
   color: #B6AA99;
   font-size: 7rem;
   font-weight: 500;
   margin-bottom: 17px;
 }
-.header-content .subtitle-text {
+.header-content .subtitle-text, .content-error .subtitle-text {
   font-family: "Poppins", sans-serif;
   color: #F7F7F8;
   font-size: 1.3rem;
@@ -159,26 +159,6 @@
   font-weight: 400;
   text-align: left;
   margin-bottom: 20px;
-}
-
-.content-error {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.content-error .title-text {
-  font-family: "Birthstone Bounce", cursive;
-  color: #0F0606;
-  font-size: 5rem;
-  font-weight: 500;
-  margin-bottom: 17px;
-}
-.content-error .subtitle-text {
-  font-family: "Poppins", sans-serif;
-  color: #0F0606;
-  font-size: 1.3rem;
-  font-weight: 400;
 }
 
 .content-sau {
@@ -401,12 +381,6 @@ footer a {
   }
   .content-bar .container {
     align-items: center;
-  }
-  .content-header .title, .content-sau .title {
-    font-size: 28px;
-  }
-  .about-content h2 {
-    font-size: 2rem;
   }
   .order-md-2 {
     order: -1;
